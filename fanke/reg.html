@@ -219,117 +219,8 @@
     <input name="hdn_ResourceHref" id="hdn_ResourceHref_name" type="hidden" value="http://www.vancl.com" />
     <!--wrapper-->
     </form>
-    <script type="text/javascript">
-        function hoverinput(id, fun) {
-            var jqobj = $("#" + id);
-            //            $(jqobj).hover(function () {
-            //                var _value = $(this).find("input").val();
-            //                $(this).find("input").focus();
-            //                if (_value == "") {
-            //                    $(this).find("label").css({ "z-index": "8" });
-            //                    $(this).find("input").removeClass("hoverinput").addClass("hoverinput");
-            //                }
-            //            }, function () {
-            //                var _value = $(this).find("input").val();
-            //                if (_value != "") {
-            //                    $(this).find("input").removeClass("hoverinput");
-            //                } else {
-            //                    $(this).find("label").css({ "z-index": "10" });
-            //                }
-            //                $(this).find("input").blur();
-            //            });
-            $(jqobj).bind("click", function () {
-                var _value = $(this).find("input").val();
-                $(this).find("input").focus();
-                if (_value == "") {
-                    $(this).find("label").css({ "z-index": "8" });
-                    $(this).find("input").removeClass("hoverinput").addClass("hoverinput");
-                }
+  
 
-                if (typeof fun != "undefined") {
-                    fun();
-                }
-            });
-
-            $(jqobj).find("input").focus(function () {
-                var _value = $(this).val();
-                if (_value == "") {
-                    $(this).parent().find("label").css({ "z-index": "8" });
-                    $(this).parent().find("input").removeClass("hoverinput").addClass("hoverinput");
-                }
-            });
-
-            $(jqobj).find("input").blur(function () {
-                var _value = $(this).val();
-                if (_value != "") {
-                    $(this).removeClass("hoverinput");
-                } else {
-                    $(this).parent().find("label").css({ "z-index": "10" });
-                }
-                //$(this).blur();
-            });
-
-            $(jqobj).find("input").keyup(function () {
-                var _value = $(this).val();
-                if (_value != "") {
-                    $(this).removeClass("hoverinput");
-                }
-            });
-
-            $(jqobj).find("input").keydown(function () {
-                var _value = $(this).val();
-                if (_value != "") {
-                    $(this).removeClass("hoverinput");
-                }
-            });
-        }
-
-
-        $(document).ready(function () {
-            $('#_quickpiccodeimg').click(function () {
-                $("#_quickpiccodeimg").attr('src', 'picture/calculatevalidatecode.ashx&t=' + new Date().getTime());
-            });
-
-            $("#_quickpiccode").blur(function () {
-                var sender = $(this);
-                var piccode = sender.val();
-                if (piccode == null || piccode == '') {
-                    $("#_quickcode span").html("请输入图片验证码");
-                    $("#_quickcode span").show();
-                }
-                else {
-                    $("#_quickcode span").hide();
-                }
-            });
-
-            setTimeout(function () { TabChange('phone'); }, '10');
-
-            hoverinput("_umobile");
-            hoverinput("_mcode");
-            hoverinput("_mpassword");
-            hoverinput("_mpassword2");
-            hoverinput("_quickcode");
-            setTimeout(function () {
-                $(".v2reg_tips02").removeClass("ssss");
-            }, 500);
-
-            hoverinput("_yanzhenma", function () {
-                $("#_yanzhenma label").css("margin-top", "15px");
-                $("#_yanzhenma img").css("margin-top", "15px");
-            });
-        });
-
-        function chkfn() {
-            var _checked = $(this).attr("checked");
-            if (_checked == "checked") {
-                $("#submitRegister_false").parent().hide();
-                $("#submitRegister").parent().show();
-            } else {
-                $("#submitRegister_false").parent().show();
-                $("#submitRegister").parent().hide();
-            }
-        }
-    </script>
 
     <!--bottom-->
     <center>
@@ -343,14 +234,9 @@
 		</div>
 	</div>
     </center>
-    <!--javascript-->
+  
     
-    
-    <script type="text/JavaScript" src="js/js_1.ashx"
-        language="javascript"></script>
     
 
-    
-    <script type="text/javascript" language="javascript" src="js/js_2.ashx"></script>
 </body>
 </html>
