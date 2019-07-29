@@ -1,5 +1,5 @@
 *{margin: 0;padding:0}
-.top,.middle{
+.top,.middle,#bg{
      width: 1200px;
      font-size: 12px;
     font-family: "宋体";
@@ -53,4 +53,56 @@ ul li a,.middle ul li {color:#808080;text-decoration:none; }
     padding-top: 6px;
     font-size: 12px;
 }
+
+#bg {
+    background: white;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin-top: 20px;
+    height: 35px;
+}
+nav {
+    height: 35px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+  
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    line-height: 35px;
+    text-align: center;
+    color: #727171;
+    font-size: 16px;
+    padding-right: 10px;
+    font-family: 微软雅黑;
+}
+nav ul li  span{
+    line-height: 35px;
+}
+nav ul li ul li {
+    float: none
+}
+
+nav ul li ul li a {
+    color: black
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+   
+}
+nav ul :hover {border-bottom: red 3px solid; }
+
 
