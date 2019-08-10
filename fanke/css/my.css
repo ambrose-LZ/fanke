@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container-left{
+width: 180px;
+font-size: 12px;
+}
+.my_fanke{
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px;
+}
+.my_fanke h2{
+    background: url(http://i.vanclimg.com/my/01.jpg) no-repeat 25px center;
+    background-color: red;
+    padding-left: 46px;
+    display: block;
+    font-weight: bold;
+    color: #656565;
+}
+#left-container{
+    border:1px solid #ccc;
+}
+#left-container ul {
+    list-style: none;
+}
+#left-container ul li a {
+    text-decoration: none;
+}
+.left-li-type2{
+    text-decoration: none;
+    height: 24px;
+    padding: 0 0 0 30px;
+    line-height: 24px;
+    overflow: hidden;
+    display: block;
+}
+.left-li-type2 a{
+    font-size: 12px;
+    color:black;
+    font-family: "宋体";
+}
+.left-li-type1{
+    text-decoration: none;
+    background: url(http://i.vanclimg.com/my/02.jpg) repeat-x;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+#container{
+	position: relative;
+}
+#content1,#content2,#content3{
+	width: 300px;
+	height: 100px;
+	padding:30px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+#tab li:first-child,#content1{
+	background-color: #ffcc00;
+}
+#tab li:first-child+li,#content2{
+	background-color: #ff00cc;
+}
+#tab li:first-child+li+li,#content3{
+	background-color: #00ccff;
+}
+
