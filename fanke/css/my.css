@@ -2,6 +2,10 @@
     margin: 0;
     padding:0;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+}
 .container-left{
 width: 180px;
 font-size: 12px;
@@ -50,24 +54,85 @@ font-size: 12px;
     text-align: center;
     font-weight: bold;
 }
-#container{
-	position: relative;
+#container-right{
+ width: 1250px;
+ margin-left: 20px;
 }
-#content1,#content2,#content3{
-	width: 300px;
-	height: 100px;
-	padding:30px;
-	position: absolute;
-	top: 40px;
-	left: 0;
-}
-#tab li:first-child,#content1{
-	background-color: #ffcc00;
-}
+
 #tab li:first-child+li,#content2{
 	background-color: #ff00cc;
 }
 #tab li:first-child+li+li,#content3{
 	background-color: #00ccff;
 }
+.status{
+display: none;
+}
+.safe{
+    width: 1000px;
+    border: 1px solid #ffeec4;
+    background: #fefef1;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 10px;
+    display: flex;
+}
+.safe-status{
+    width: 136px;
+    height: 15px;
+    border: 1px solid #cfcfcf;
+    margin-left: 20px;
+}
+.safe-status a{
+    width: 44px;
+    height: 12px;
+    font-size: 12px;
+    font-family: 宋体;
+    color: #fff;
+    text-align: center;
+    background: #c8c8c8;
+    margin: 1px 0px 1px 1px;
+    display: inline-block;
+}
+.safe-span1{
+ background: url(http://i.vanclimg.com/my/2012/accountsafe/securitysprites.png) no-repeat left top;
+}
+.safe_yz{
+    list-style-type: none;
+    font-size: 15px;
+}
+.safe_yz li{float: left;margin-left: 10px; line-height: 15px;}
+.safe_yz li a{text-decoration: none;}
+.my_count{margin:30px 0 0 20px; display: flex;}
+.my_pic{
+    width: 90px;
+    float: left;
+    text-align: center;
+}
 
+.my_txt{
+    margin-left: 30px;
+    font-size: 10px;
+}
+.order-table ul{
+    width: 329px;
+    list-style-type: none;
+}
+.order-table ul .bigli{
+    width: 460px;
+    border-top: 1px dotted #999;
+}
+.order-table ul li {
+    height: 36px;
+    float: left;
+    padding-left: 5px;
+    line-height: 36px;
+    border: 1px dotted #999;
+    border-top:none;
+    width: 308px;
+    padding-left: 20px;
+    color: #333;
+}
+.wx_pic{
+    margin-left: 190px;
+}
