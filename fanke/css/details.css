@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+#content{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "宋体";
+}
+ul{
+    list-style: none;
+}
+.detail-nav ul {
+    height: 22px;
+    display: flex;
+    padding-top: 10px;
+}
+.detail-nav ul li{
+    padding: 6px;
+    color: #333;
+}
+.detail-title{
+    height: 45px;
+    border-bottom: 1px solid #e5e6e6;
+    min-width: 980px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-title h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei"
+}
+.detail-title ul {
+    display: flex;
+}
+.detail-title ul li{
+    padding: 0px 15px 0px 0px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #808080;
+}
+.detail-content{
+    display: flex;
+}
+.pro-left{
+    margin:30px 0;
+    display: flex;
+}
+.pro-left span{
+    width: 70px;
+    height: 70px;
+    background: rebeccapurple;
+}
+.pro-left img{
+    width: 400px;
+    height: 400px;
+    background: orange;
+    margin: 0 80px ;
+}
+.pro-right{
+    width: 570px;
+    height: 370px;
+    margin:30px 0;
+}
+.pro-right span{
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+}
+.pro-right p{
+    color: #A10000;
+}
+.pro-right p span{
+    height: 26px;
+    line-height: 56px;
+    font-family: Tahoma;
+    font-size: 24px;
+}
+.pro-right p a{
+    color: #A10000;
+    margin-left: 45px;
+}
+.pro-right .pro-color{
+    display: flex;
+    margin-top:25px;
+}
+.pro-right .pro-color img{
+   width: 36px;
+   height: 36px;
+   background: pink;
+}
+.pro-right .pro-color .pro-img{
+border:1px solid red ;
+display: flex;
+width: 93px;
+height: 38px;
+ }
+ .pro-size{
+     display: flex;
+     width: 335px;
+     height:31px;
+     margin: 15px 0;
+ }
+ .pro-size{
+     line-height: 20px;
+ }
+ .pro-size a{
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    padding: 3px 9px;
+    height: 24px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.pro-choose{
+    margin: 15px 0;
+}
+.pro-choose a{
+    height: 22px;
+    line-height: 22px;
+    color: #666666;
+    font-weight: bold;
+}
+.pro-choose p{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.pro-btn a{
+    background: #F7ABAF;
+    text-align: center;
+    line-height: 30px;
+    width: 166px;
+    height: 31px;
+    float: left;
+    border: solid 1px rgb(183, 27, 33);
+    margin-right: 30px;
+    display: block;
+    font-size: 14px;
+    color: #A50309;
+}
+.pro-btn a:last-child{
+    background: #A10000;
+    color:white;
+}
+
+
